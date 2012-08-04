@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{site_name}} - archives</title>
+	{{>meta}}
+	{{>css}}
+</head>
+<body>
+	 <div id="wrapper">
+        {{>left-bar}}
+    	<section class="articles list">
+    		{{#articles}}
+                <div class="archive-list-wrapper">
+                    <span class="archive-date">
+                        <time datetime="{{dateString}}">{{dateString}}</time>
+                    </span>
+                    <span class="archive-link">
+    				    <a href="{{url}}" class="article-link">{{title}}</a>
+                    </span>
+                </div>
+    		{{/articles}}
+    	</section>
+    	{{>right-bar}}
+        {{>copyright}}
+    	{{>js}}
+        {{>analytics}}
+    </div>
+</body>
+</html>

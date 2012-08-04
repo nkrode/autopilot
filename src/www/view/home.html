@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{site_name}}</title>
+	{{>meta}}
+	{{>css}}
+</head>
+<body>
+    <div id="wrapper">
+        {{>left-bar}}
+    	<section class="articles home">
+
+            {{#articles}}
+    			<article>
+
+                    <header>
+        				<h2>
+        					<a href="{{url}}">{{title}}</a>
+        				</h2>
+        				<time datetime="{{dateString}}">{{dateString}}</time>
+                    </header>
+
+    				{{& summary}}
+
+                    <a href="{{url}}" class="read-on">read on »</a>
+    			</article>
+    		{{/articles}}
+
+    		{{#showArchive}}
+        		<div id="archives">
+        			<a href="/list">archive</a>
+        		</div>
+    		{{/showArchive}}
+
+    	</section>
+        {{>right-bar}}
+        {{>copyright}}
+    	{{>js}}
+        {{>analytics}}
+    </div>
+</body>
+</html>
+

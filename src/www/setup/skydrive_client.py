@@ -1,0 +1,4 @@
+
+
+class SkyDriveClient(object):
+    pass

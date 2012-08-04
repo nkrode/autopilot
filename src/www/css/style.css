@@ -1,0 +1,394 @@
+/* =========================================================================
+   resets
+   ========================================================================= */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+    display: block;
+}
+
+a img {border: 0;}
+
+
+
+/* =========================================================================
+   typography
+   ========================================================================= */
+
+a { color : #000; }
+
+body {
+    overflow: scroll;
+    background: #fff;
+    border-color: #000;
+    border-style: solid none none none;
+    border-width: 0.8em;
+    color: #000;
+    font-family: Georgia, serif;
+    font-size: 100%;
+    line-height:1.5em; /* 16×1.125=18 */
+    width: 100%;
+    min-width: 1024px;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+code {
+    background-color: #F8F8F8;
+    border-color: #EAEAEA;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 4px;
+    margin: 0 2px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0px 24px 0px;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+h1 { font-size: 1.6em; }
+
+h2 { font-size: 1.5em; }
+
+h3 { font-size: 1.4em; }
+
+h4 { font-size: 1.3em; }
+
+h5 { font-size: 1.2em; }
+
+h6 { font-size: 1.1em; }
+
+hr {
+    margin: 20px 0;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+p {
+    font-size: 1em;
+    margin: 0 0 24px 0;
+}
+
+time {
+	color: #908080;
+    font-style: italic;
+    font-size: 0.875em;
+}
+
+ul, ol {
+    margin: 16px 0 16px 40px;
+}
+
+
+/* =========================================================================
+   structure
+   ========================================================================= */
+
+#archives {
+    text-align: center;
+    background-color: #EBEBEB;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 100px;
+}
+
+.articles {
+    border-color: #E2E2E2;
+    border-width: 1px;
+    float: left;
+    padding: 20px 40px;
+    width: 664px;
+}
+
+article h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+    margin: 0;
+}
+
+article {
+    border-bottom: 1px solid #DDD;
+    padding: 0 0 50px 0;
+    margin: 0 0 50px 0;
+}
+
+article header {
+    margin: 0 0 2em 0;
+}
+
+.comments {
+    padding-top: 50px;
+}
+
+#copyright {
+    clear:both;
+    margin: 10px auto 50px auto;
+    text-align: center;
+}
+
+#footer {
+    clear: both;
+}
+
+#right-bar {
+    float: left;
+    padding: 20px 0 0 0;
+    width: 140px;
+    text-align: center;
+}
+
+#left-bar {
+    float: left;
+    padding: 20px 0 0 0;
+    width: 140px;
+}
+
+.list {
+    border-bottom: 1px solid #DDD;
+    min-height: 150px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#logo h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#meta-list li{
+    padding: 5px 0px;
+}
+
+#logo {
+    margin: 0px 0 20px 0;
+}
+
+#nav-list li{
+    padding: 5px 0px;
+}
+
+.read-on {
+    font-style: italic;
+}
+
+.signature {
+    padding: 20px 0;
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: 1024px;
+}
+
+
+
+/* =========================================================================
+   common style
+   ========================================================================= */
+
+.no-bullet {
+    list-style: none;
+    margin: 0;
+}
+
+.highlite {
+    color: #B90314;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.fifty {
+    width: 50%;
+}
+
+.thirty {
+    width: 30%;
+}
+
+.seventy{
+    width: 70%;
+}
+
+.hundred {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.archive-date {
+    display: inline-block;
+    text-align: right;
+    width: 170px;
+}
+
+.archive-link {
+    display: inline-block;
+    padding: 0 0 20px 20px;
+    text-align: left;
+    width: 270px;
+}
+
+.archive-list-wrapper{
+    text-align: center;
+}
+
+.article-img-right img{
+    float: right;
+    margin: 20px 0 20px 20px;
+}
+.article-img img{
+    display: block;
+    margin: 25px auto;
+    border: 1px solid #bbb;
+}
+
+/* =========================================================================
+   responsive
+   ========================================================================= */
+
+@media all and (max-width: 768px) {
+
+    .article-img img, .article-img-right img{
+        width: 80%;
+        float: none;
+        margin: 25px auto;
+        display: block;
+    }
+
+    .archive-date {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .archive-link {
+        display: block;
+        padding: 0 0 20px 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    body {
+        min-width: 0;
+    }
+
+    #archives {
+        display: none;
+    }
+
+    article {
+        padding: 0 20px 50px 20px;
+    }
+
+   .articles {
+        border-style: solid none none none;
+        float: none;
+        width: 100%;
+        padding: 20px 0px;
+        margin: 10px 0px;
+    }
+
+    #right-bar {
+        float: none;
+        padding: 0 0 20px 0;
+        width: 100%;
+    }
+
+    #left-bar {
+        float: none;
+        padding: 10px 0 10px 0;
+        padding: 0px;
+        width: 100%;
+    }
+
+    #logo h1 {
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    #logo img {
+        display:block;
+        margin:10px auto;
+    }
+
+    .list {
+        border-bottom: 1px solid #DDD;
+    }
+
+
+    #meta-list li{
+        padding: 0px 5px;
+        display: inline;
+    }
+
+    #nav-list li{
+        padding: 0px 5px 40px 0px;
+        display: inline;
+    }
+
+    #wrapper{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-width: 320px;
+    }
+
+
+}
+
+/* =============================================================================
+   Setup
+   ========================================================================== */
+
+.showcase{
+	padding:20px;
+	width:400px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.provider {
+	padding:50px;
+}
+

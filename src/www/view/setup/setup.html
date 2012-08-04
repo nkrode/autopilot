@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>setup</title>
+	<meta charset="utf-8" />
+	{{>css}}
+</head>
+<body>
+	<section class="showcase">
+		<form method="post">
+		<h1>Pick a provider</h1>
+
+		<div class="provider">
+			<input type="image" src="/img/dropbox.png" name="provider" value="dropbox">
+		</div>
+
+		<!-- <div class="provider">
+			<input type="image" src="/img/skydrive.png" name="provider" value="skydrive">
+		</div> -->
+
+		<div class="provider">
+			<input type="image" src="/img/googledrive.png" name="provider" value="googledrive">
+		</div>
+
+        <input type="hidden" name="pass" value="{{pass}}">
+
+		</form>
+	</section>
+	{{>js}}
+</body>
+</html>

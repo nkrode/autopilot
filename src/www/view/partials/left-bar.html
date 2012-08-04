@@ -1,0 +1,25 @@
+<section id="left-bar">
+	<header>
+		<div id="logo" class="text-center">
+			<a href="/"><img src="/img/logo.png" alt="home"></a>
+		</div>
+        <ul id="meta-list" class="no-bullet text-center">
+
+            {{#twitter}}
+                <li><a href="https://twitter.com/{{twitter}} ">twitter</a></li>
+            {{/twitter}}
+
+            {{#github}}
+            <li><a href="https://github.com/{{github}}">github</a></li>
+            {{/github}}
+
+            {{#coderwall}}
+            <li><a href="https://coderwall.com/{{coderwall}}">coderwall</a></li>
+            {{/coderwall}}
+
+            {{#email}}
+            <li><a href="mailto:{{email}}">email</a></li>
+            {{/email}}
+        </ul>
+	</header>
+</section>

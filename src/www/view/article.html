@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#article}}{{title}}{{/article}}</title>
+    {{>meta}}
+    {{>css}}
+</head>
+<body>
+    <div id="wrapper">
+        {{>left-bar}}
+        <section class="articles current">
+            <article>
+                {{#article}}
+
+                    <header>
+                        <h2>
+                            {{title}}
+                        </h2>
+                        <time datetime="{{dateString}}">{{dateString}}</time>
+                    </header>
+
+                    {{& content}}
+
+                {{/article}}
+
+                <section class="signature">
+                    {{>signature}}
+                </section>
+
+                <section class="share">
+                    {{>share}}
+                </section>
+
+                <section class="comments">
+                    {{>comments}}
+                </section>
+
+            </article>
+        </section>
+        {{>right-bar}}
+        {{>copyright}}
+        {{>js}}
+        {{>analytics}}
+    </div>
+</body>
+</html>
