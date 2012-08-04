@@ -54,7 +54,7 @@ class DropboxClient(BaseClient):
                 access_token = sess.obtain_access_token(request_token)
                 serialize_token = {'key': access_token.key,
                                    'secret': access_token.secret}
-                stream = open(self.TOKEN_FILE_NAME, 'w')
+                stream = open(self.TOKEN_FILE_NAME, 'w+')
                 dump(serialize_token, stream)
 
                 # delete delta file
