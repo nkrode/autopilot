@@ -88,25 +88,14 @@ class BaseController(tornado.web.RequestHandler):
 
                     title = lines[0]
 
-                    match = re.search('\[(.{1,2}/.{1,2}/.{2,4})\]', title)
+                    match = re.search('\[([0-9]{4}-[0-9]{1,2}-[0-9]{1,2})\]', title)
 
                     if match:
                         published_date_string = match.group(1)
                         date_parts = published_date_string.split('/')
 
-                        # 4 digit year should be greater than 1900
-                        if (len(date_parts[2]) == 4 and
-                                int(date_parts[2]) > 1900):
-                            published_date = datetime.strptime(
-                                published_date_string, '%m/%d/%Y')
-                        # 2 digit year
-                        elif len(date_parts[2]) == 2:
-                            published_date = datetime.strptime(
-                                    published_date_string, '%m/%d/%y')
-                        else:
-                            logging.warning('skipping article: %s' %
-                                            title.strip())
-                            continue
+                        published_date = datetime.strptime(
+                            published_date_string, '%Y-%m-%d')
 
                         published_date_string = self._custom_strftime(
                                                 '%B {S}, %Y',
